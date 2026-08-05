@@ -216,17 +216,19 @@ Each skill covers a distinct dimension of technical content quality, so they are
 
 ## Contributing
 
-This collection is maintained by Hackmamba. If you use one of these skills and find a gap, or a pattern it consistently misses, open an issue or submit a pull request.
+This collection is maintained by Hackmamba. If you use one of these skills and find a gap, or a pattern it consistently misses, feel free to open an issue or submit a pull request.
 When contributing a new skill, follow the existing structure: a `SKILL.md` with clear activation and deactivation triggers, a `references/` folder with the knowledge base the skill reads during a review, and placement in the correct category folder.
+
+**If this skills helps you, please star the repo and share it. That is the main way other writers find it.**
 
 ---
 
 ## Get in touch
 
-If you have questions about any of the skills or have ideas for new skills you would like to see in this collection, feel free to reach out directly.
+If you have questions about any of the skills or have ideas for new skills you would like to see in this collection, feel free to reach out to the maintainers directly.
 
-- Praise: praise@hackmamba.io
-- Asjad: asjad@hackmamba.io
+- [Praise](https://www.linkedin.com/in/praise-james-608b91284)
+- [Asjad](https://www.linkedin.com/in/asjad2001)
 
 We are happy to help you get set up or talk through how to adapt a skill for your specific workflow.
 
