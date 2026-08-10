@@ -1,17 +1,48 @@
-# Creator Skills: Claude Skills for Technical Writers
+# Creator Skills: Agent Skills for Technical Writers
 
-A collection of Claude skills built specifically for technical writers, developer educators, and anyone who creates content for technical audiences. Whether you are writing your first tutorial or auditing a documentation set that has been live for three years, these skills give you a structured, opinionated review process you can run on any draft.
+A collection of agent skills built specifically for technical writers and developer educators. Whether you are writing your first tutorial or auditing a documentation set that has been live for three years, these skills give you a structured, opinionated review process you can run on any draft.
 
 These skills were built and refined through the content work we do at [Hackmamba](https://hackmamba.io). They reflect what actually goes wrong in technical writing across experience levels: code that breaks when readers copy it, documentation that quietly drifted out of date, articles that are aimed at the wrong reader, and prose that reads like it came from a machine rather than a practitioner. Every skill in this collection was designed to solve a specific, recurring problem.
 
 ---
 
-## How to install a skill
+## Install the skills
 
-1. Open Claude Desktop and navigate to your skills directory. On Mac, this is usually `~/Library/Application Support/Claude/skills/`. On Windows, it is usually `%APPDATA%\Claude\skills\`.
-2. Copy the skill folder (for example, `style-guide-enforcer/`) into your skills directory. Make sure the folder contains both the `SKILL.md` file and the `references/` subfolder.
-3. Restart Claude Desktop.
-4. The skill is now active. Claude will use it automatically when your request matches the skill's trigger conditions, or you can invoke it directly by describing what you want to do.
+Use the [Skills CLI](https://skills.sh) to install these skills for any supported agent. The CLI handles each agent's install path.
+
+Browse the collection and choose which skills and agents to install:
+
+```bash
+npx skills add hackmamba-io/creator-skills
+```
+
+List the available skills without installing them:
+
+```bash
+npx skills add hackmamba-io/creator-skills --list
+```
+
+Install one skill for a specific agent:
+
+```bash
+npx skills add hackmamba-io/creator-skills --skill style-guide-enforcer -a codex
+```
+
+Replace `codex` with the supported agent ID you use.
+
+Install every skill for a specific agent:
+
+```bash
+npx skills add hackmamba-io/creator-skills --skill '*' -a codex
+```
+
+Install every skill for every supported agent detected on your machine:
+
+```bash
+npx skills add hackmamba-io/creator-skills --all
+```
+
+These commands install skills in the current project by default. Add `-g` to install them globally.
 
 ---
 
@@ -37,7 +68,7 @@ Skills for reviewing the craft and calibration of written content. These are the
 - Calibrates feedback to the writer's experience level
 - Ends every review with a "One thing to focus on next" that identifies the writer's most recurring pattern as a habit to build, not just a list of mistakes to fix
 
-**How to use it:** Paste your draft and ask Claude to review it. Optionally include your company's style rules or a description of your audience. The skill handles drafts of any length and works equally well on a single paragraph or a full article.
+**How to use it:** Paste your draft and ask your agent to review it. Optionally include your company's style rules or a description of your audience. The skill handles drafts of any length and works equally well on a single paragraph or a full article.
 
 ---
 
@@ -75,7 +106,7 @@ Skills for reviewing the craft and calibration of written content. These are the
 - Groups findings by severity so writers know what to fix first
 - Distinguishes between clean and bland writing
 
-**How to use it:** Paste your draft or name the file to review. Ask Claude to review it for AI writing patterns, or ask it to fix the draft directly and return a cleaned version.
+**How to use it:** Paste your draft or name the file to review. Ask your agent to review it for AI writing patterns, or ask it to fix the draft directly and return a cleaned version.
 
 ---
 
@@ -217,7 +248,7 @@ Each skill covers a distinct dimension of technical content quality, so they are
 ## Contributing
 
 This collection is maintained by Hackmamba. If you use one of these skills and find a gap, or a pattern it consistently misses, feel free to open an issue or submit a pull request.
-When contributing a new skill, follow the existing structure: a `SKILL.md` with clear activation and deactivation triggers, a `references/` folder with the knowledge base the skill reads during a review, and placement in the correct category folder.
+When contributing a new skill, place it under `skills/<category>/<skill-name>/`. Add a `SKILL.md` with clear activation and deactivation triggers, plus a `references/` folder for any supporting knowledge the skill reads during a review.
 
 **If this skills helps you, please star the repo and share it. That is the main way other writers find it.**
 
@@ -239,4 +270,3 @@ We are happy to help you get set up or talk through how to adapt a skill for you
 If you want to connect with other technical writers, share your experience using these skills, or learn from people who are doing the same kind of work you are, come join us in the Hackmamba Creators community on Discord. It is a space for technical writers at all levels to ask questions, share work, and grow together.
 
 [Join the Hackmamba Creators Community](https://hackmamba.io/community/)
-
