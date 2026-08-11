@@ -1,8 +1,8 @@
-# Creator Skills: Agent Skills for Technical Writers
+# Creator Skills: Agent Skills for Technical Creators
 
-A collection of agent skills built specifically for technical writers and developer educators. Whether you are writing your first tutorial or auditing a documentation set that has been live for three years, these skills give you a structured, opinionated review process you can run on any draft.
+A collection of agent skills built specifically for technical creators. Whether you are creating your first tutorial or auditing a documentation set that has been live for three years, these skills give you a structured, opinionated review process you can run on any draft.
 
-These skills were built and refined through the content work we do at [Hackmamba](https://hackmamba.io). They reflect what actually goes wrong in technical writing across experience levels: code that breaks when readers copy it, documentation that quietly drifted out of date, articles that are aimed at the wrong reader, and prose that reads like it came from a machine rather than a practitioner. Every skill in this collection was designed to solve a specific, recurring problem.
+These skills were built and refined through the content work we do at [Hackmamba](https://hackmamba.io). They reflect what actually goes wrong in technical content across experience levels: code that breaks when readers copy it, documentation that drifted out of date, articles that are aimed at the wrong reader, and prose that reads like it came from a machine rather than a practitioner. Every skill in this collection was designed to solve a specific, recurring problem.
 
 ---
 
@@ -60,7 +60,7 @@ Skills for reviewing the craft and calibration of written content. These are the
 
 **What it does:** Reviews any technical writing draft against a consolidated set of rules synthesized from four major style guides: the Google Developer Documentation Style Guide, the Microsoft Writing Style Guide, the Chicago Manual of Style, and the Apple Style Guide. For every flagged issue, it quotes the exact sentence, names the principle being violated, explains why it matters to the reader, and offers a specific rewrite.
 
-**Who it is for:** Technical writers at any level, developers who write documentation, and editors reviewing content before publication. Writers who are new to technical writing will get explanations of each principle. Senior writers will get direct, peer-level feedback with alternative framings where relevant.
+**Who it is for:** Technical creators at any level, developers who write documentation, and editors reviewing content before publication. Creators who are new to technical writing will get explanations of each principle. Experienced creators will get direct, peer-level feedback with alternative framings where relevant.
 
 **Key benefits:**
 - Covers voice and tone, grammar, word choice, punctuation, headings, lists, code elements, and inclusive language in a single pass
@@ -74,9 +74,9 @@ Skills for reviewing the craft and calibration of written content. These are the
 
 #### audience-analyzer
 
-**What it does:** Reads a draft the way an experienced content strategist would, looking not just at what it says but at who it assumes is reading. It infers the actual audience from the text itself, compares that against the writer's stated intended audience if one is provided, and flags every place the draft fails to serve its reader. The output includes a full audience profile match, a mismatch report with exact quotes, and a tone and depth calibration assessment across six dimensions.
+**What it does:** Reads a draft the way an experienced content strategist would, looking not just at what it says but at who it assumes is reading. It infers the actual audience from the text itself, compares that against the creator's stated intended audience if one is provided, and flags every place the draft fails to serve its reader. The output includes a full audience profile match, a mismatch report with exact quotes, and a tone and depth calibration assessment across six dimensions.
 
-**Who it is for:** Technical writers at all experience levels, content strategists, and editors who want to evaluate whether a piece is pitched correctly for its audience.
+**Who it is for:** Technical creators at all experience levels, content strategists, and editors who want to evaluate whether a piece is pitched correctly for its audience.
 
 **Audience types covered:**
 - Developer (engineer, architect, DevOps)
@@ -98,12 +98,12 @@ Skills for reviewing the craft and calibration of written content. These are the
 
 **What it does:** Reviews developer-facing technical content for the writing patterns that make prose read as AI-generated rather than authored by a practitioner. It flags filler language, mechanical transitions, marketing adjectives, narrated code, fake reader-journey framing, and structural tells. For every flag, it proposes a concrete rewrite that preserves the technical meaning exactly.
 
-**Who it is for:** Anyone producing technical content with AI assistance who wants the output to read as human-generated. Also useful for editors reviewing AI-assisted drafts before publication.
+**Who it is for:** Any technical creator producing content with AI assistance who wants the output to read as human-generated. Also useful for editors reviewing AI-assisted drafts before publication.
 
 **Key benefits:**
 - Covers writing patterns specific to technical content, not just general prose problems
 - Every rewrite preserves the original technical claim, so de-slopping never accidentally changes what a command does or what an API returns
-- Groups findings by severity so writers know what to fix first
+- Groups findings by severity so creators know what to fix first
 - Distinguishes between clean and bland writing
 
 **How to use it:** Paste your draft or name the file to review. Ask your agent to review it for AI writing patterns, or ask it to fix the draft directly and return a cleaned version.
@@ -118,9 +118,9 @@ Skills for evaluating and improving documentation architecture. These skills ope
 
 #### ia-auditor
 
-**What it does:** Audits a table of contents, sitemap, heading structure, or navigation hierarchy and produces a diagnosis of every structural problem with the current organization, and a proposed restructured table of contents the writer can adopt or use as a starting point. The analysis is grounded in Diátaxis content classification and task-oriented IA principles, giving every recommendation a named reason rather than a personal preference.
+**What it does:** Audits a table of contents, sitemap, heading structure, or navigation hierarchy and produces a diagnosis of every structural problem with the current organization, and a proposed restructured table of contents you can adopt or use as a starting point. The analysis is grounded in Diátaxis content classification and task-oriented IA principles, giving every recommendation a named reason rather than a personal preference.
 
-**Who it is for:** Technical writers, documentation leads, and content strategists who are dealing with documentation that has grown organically and become hard to navigate. Also useful at the start of a new documentation project before any pages are written.
+**Who it is for:** Technical creators working with documentation, along with documentation leads, and content strategists who are dealing with documentation that has grown organically and become hard to navigate. Also useful at the start of a new documentation project before any pages are written.
 
 **Frameworks used:**
 - Diátaxis (tutorials, how-to guides, explanations, reference): classifies content by reader need and flags where content types are being mixed
@@ -149,7 +149,7 @@ Skills for evaluating and improving documentation architecture. These skills ope
 #### diataxis-scaffolder
 **What it does:** Classifies the documentation intent and scaffolds a mode-appropriate skeleton with section headings, guidance notes, and explicit boundaries that keep the page from drifting into another mode. The writer fills in the content, the skill ensures the container is right before writing begins.
 
-**Who it is for:** Technical writers starting a new documentation page, tutorial, guide, README section, or API page. Especially useful for writers who are unsure which of the four Diátaxis modes their topic belongs to.
+**Who it is for:** Technical creators starting a new documentation page, tutorial, guide, README section, or API page. Especially useful when you are unsure which of the four Diátaxis modes their topic belongs to.
 
 **Modes covered:**
 - Tutorial: learning through guided action, assumes no prior competence
@@ -159,7 +159,7 @@ Skills for evaluating and improving documentation architecture. These skills ope
 
 **Key benefits:**
 - Classifies the intent first, then scaffolds, so the structure follows the reader's need
-- Flags the boundaries that would pull the page into a different mode, so writers know what to avoid as they draft
+- Flags the boundaries that would pull the page into a different mode, so you know what to avoid as you draft
 - Suggests cross-links to sibling pages in other modes, keeping each page focused while ensuring the full topic is covered
 - Follows the principle of one page, one mode: if the topic genuinely needs two modes, it scaffolds two pages
 
@@ -177,7 +177,7 @@ Skills for evaluating technical elements within content. These skills require do
 
 **What it does:** Reviews code samples in technical content for correctness, completeness, runnability, security hygiene, and code-prose consistency. It checks both the code itself and the prose that surrounds it, with more weight on the code. Every flagged issue comes with an explanation of the reader impact and a corrected version of the code. The review ends with a readiness verdict: ready with minor fixes, needs revision before publication, or not publication-ready.
 
-**Who it is for:** Technical writers reviewing code in their own articles, developers writing documentation or tutorials, and editors reviewing articles before publication.
+**Who it is for:** Technical Creators reviewing code in their own articles, developers writing documentation or tutorials, and editors reviewing articles before publication.
 
 **Language coverage:**
 
@@ -203,9 +203,9 @@ Tier 2 (universal rules): All other languages
 
 #### drift-detector
 
-**What it does:** Compares existing documentation against a current source of truth and identifies every place the documentation no longer accurately reflects the product, API, or system it describes. Every flagged item is classified by drift type and assigned a severity level so writers can triage what to fix first. The report also confirms what is still accurate, so writers know which sections they can leave alone.
+**What it does:** Compares existing documentation against a current source of truth and identifies every place the documentation no longer accurately reflects the product, API, or system it describes. Every flagged item is classified by drift type and assigned a severity level so you can triage what to fix first. The report also confirms what is still accurate, so you know which sections they can leave alone.
 
-**Who it is for:** Every technical writer who has maintained documentation through at least one product update cycle. This is a universal problem that affects writers at all experience levels.
+**Who it is for:** Any technical creator who has maintained documentation through at least one product update cycle. This is a universal problem that affects creators at all experience levels.
 
 **Supported source of truth types:**
 - OpenAPI or Swagger spec (most structured, most reliable)
@@ -223,7 +223,7 @@ Tier 2 (universal rules): All other languages
 **Severity levels:** Critical, High, Medium, Low
 
 **Key benefits:**
-- Confirms what is still accurate alongside what is wrong, so writers do not unnecessarily rewrite correct content
+- Confirms what is still accurate alongside what is wrong, so you do not unnecessarily rewrite correct content
 - Includes recommended update order that accounts for dependencies between fixes
 - Works with messy, informal inputs
 
@@ -250,7 +250,7 @@ Each skill covers a distinct dimension of technical content quality, so they are
 This collection is maintained by Hackmamba. If you use one of these skills and find a gap, or a pattern it consistently misses, feel free to open an issue or submit a pull request.
 When contributing a new skill, place it under `skills/<category>/<skill-name>/`. Add a `SKILL.md` with clear activation and deactivation triggers, plus a `references/` folder for any supporting knowledge the skill reads during a review.
 
-**If this skills helps you, please star the repo and share it. That is the main way other writers find it.**
+**If these skills help you, please star the repo and share it. That is the main way other creators find it.**
 
 ---
 
@@ -267,6 +267,6 @@ We are happy to help you get set up or talk through how to adapt a skill for you
 
 ## Join the Hackmamba Creators community
 
-If you want to connect with other technical writers, share your experience using these skills, or learn from people who are doing the same kind of work you are, come join us in the Hackmamba Creators community on Discord. It is a space for technical writers at all levels to ask questions, share work, and grow together.
+If you want to connect with other technical creators, share your experience using these skills, or learn from people who are doing the same kind of work you are, come join us in the Hackmamba Creators community on Discord. It is a space for technical creators at all levels to ask questions, share work, and grow together.
 
 [Join the Hackmamba Creators Community](https://hackmamba.io/community/)
