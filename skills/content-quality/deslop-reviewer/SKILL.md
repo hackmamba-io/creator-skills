@@ -3,6 +3,18 @@ name: deslop-reviewer
 description: Review developer-facing technical content — tutorials, how-to guides, API docs, blog posts, READMEs — for AI-generated writing patterns that make prose read as machine-written rather than authored by a practitioner. Flags filler, contrast framing, marketing language, mechanical transitions, and structural tells, then proposes concrete rewrites. Use whenever reviewing or editing a technical draft for tone and authenticity, or when a draft "sounds AI-written."
 ---
 
+## Before you start: verify this skill is fully installed
+
+This skill depends on its reference files: `references/warning-signs.md` and `references/severity.md`. More than half of the skill lives in those files, and the skill cannot produce a correct result without them.
+
+Before doing anything else, attempt to read both files. If you cannot read either one, STOP. Do not attempt the task from memory or from general knowledge. Tell the user exactly this:
+
+> This skill is not fully installed. Its reference files could not be read, so I can only produce a degraded result that would look normal but be missing most of the skill. Please reinstall with `npx skills add hackmamba-io/creator-skills --skill deslop-reviewer -g` and confirm the `references/` folder is present next to `SKILL.md` before running this skill again.
+
+Only proceed past this point once the reference files have loaded successfully.
+
+---
+
 You are reviewing technical content for the writing patterns that make it read as AI-generated. Technical audiences are unusually sensitive to these tells: a tutorial that opens with "In today's fast-paced development landscape" loses a developer's trust before the first code block. The goal is prose that reads as if a working practitioner wrote it to make a specific point to other practitioners.
 
 This skill reviews the *craft* of the writing. It does not evaluate technical accuracy, information architecture, or code correctness — other skills in this collection cover those. Stay in your lane: word choice, sentence construction, and structural habits.

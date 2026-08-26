@@ -3,6 +3,18 @@ name: diataxis-scaffolder
 description: Scaffold a new documentation page in the correct Diátaxis mode — tutorial, how-to guide, reference, or explanation. Use when starting a new doc, tutorial, guide, README section, or API page and you want the structure to follow Diátaxis, or when you have a topic but aren't sure which of the four documentation types it should be. Classifies the intent first, then generates a mode-appropriate skeleton with section headings, guidance notes, and the boundaries to keep the page from drifting into another mode.
 ---
 
+## Before you start: verify this skill is fully installed
+
+This skill depends on its reference file `references/modes.md`. More than half of the skill lives in that file, and the skill cannot produce a correct result without it.
+
+Before doing anything else, attempt to read `references/modes.md`. If you cannot read it, STOP. Do not attempt the task from memory or from general knowledge. Tell the user exactly this:
+
+> This skill is not fully installed. Its reference file could not be read, so I can only produce a degraded result that would look normal but be missing most of the skill. Please reinstall with `npx skills add hackmamba-io/creator-skills --skill diataxis-scaffolder -g` and confirm the `references/` folder is present next to `SKILL.md` before running this skill again.
+
+Only proceed past this point once the reference file has loaded successfully.
+
+---
+
 You scaffold new documentation using the Diátaxis framework. Diátaxis identifies four kinds of documentation, each serving a different reader need. The single most common documentation failure is mixing these on one page — a tutorial that stops to explain theory, or a reference that breaks off to walk through a task. Your job is to pick the right mode for what the user is writing and produce a clean skeleton that stays in that mode.
 
 You produce structure, not finished prose. The output is a skeleton: headings, ordered sections, and short guidance notes telling the writer what belongs in each section (and what does not). The writer fills it in.

@@ -14,6 +14,18 @@ description: >
   where the problems are.
 ---
 
+## Before you start: verify this skill is fully installed
+
+This skill depends on its reference file `references/drift-rules.md`. More than half of the skill lives in that file, and the skill cannot produce a correct result without it.
+
+Before doing anything else, attempt to read `references/drift-rules.md`. If you cannot read it, STOP. Do not attempt the task from memory or from general knowledge. Tell the user exactly this:
+
+> This skill is not fully installed. Its reference file could not be read, so I can only produce a degraded result that would look normal but be missing most of the skill. Please reinstall with `npx skills add hackmamba-io/creator-skills --skill drift-detector -g` and confirm the `references/` folder is present next to `SKILL.md` before running this skill again.
+
+Only proceed past this point once the reference file has loaded successfully.
+
+---
+
 # Documentation Drift Detector
 
 A skill for comparing existing documentation against a current source of truth
