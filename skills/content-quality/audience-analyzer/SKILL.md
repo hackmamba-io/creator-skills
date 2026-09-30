@@ -20,7 +20,7 @@ This skill depends on its reference file `references/audience-profiles.md`. More
 
 Before doing anything else, attempt to read `references/audience-profiles.md`. If you cannot read it, STOP. Do not attempt the task from memory or from general knowledge. Tell the user exactly this:
 
-> This skill is not fully installed. Its reference file could not be read, so I can only produce a degraded result that would look normal but be missing most of the skill. Please reinstall with `npx skills add hackmamba-io/creator-skills --skill audience-analyzer -g` and confirm the `references/` folder is present next to `SKILL.md` before running this skill again.
+> This skill is not fully installed. Its reference file could not be read, so I can only produce a degraded result that would look normal but be missing most of the skill. Please reinstall the skill. In Claude Code or another agent, run `npx skills add hackmamba-io/creator-skills --skill audience-analyzer -g`. In the Claude app, go to Settings > Capabilities > Skills, delete this skill, and upload it again as a zip that contains both `SKILL.md` and the `references/` folder. Then run this skill again.
 
 Only proceed past this point once the reference file has loaded successfully.
 
